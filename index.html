@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>MindX Challenge A2</title>
+</head>
+
+<body>
+    <h1>MindX Challenge A2</h1>
+    <script>
+        function merge2String(s1, s2) {
+            let maxLength = Math.max(s1.length, s2.length);
+            let s1Length = Number(s1.length);
+            let s2Length = Number(s2.length);
+            let mergedString = "";
+            for (let i = 0; i < maxLength; i++) {
+                if (i < s1Length) {
+                    mergedString += s1[i];
+                }
+                if (i < s2Length) {
+                    mergedString += s2[i];
+                }
+                console.log(mergedString);
+            }
+        }
+        merge2String("abcde", "123");
+        merge2String("abc", "0123");
+        merge2String("abc", "123");
+    </script>
+</body>
+
+</html>
